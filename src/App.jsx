@@ -10,43 +10,8 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("hero")
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const sections = ["hero", "about", "benefits", "testimonials", "contact"]
-
-  //     for (const section of sections) {
-  //       const element = document.getElementById(section)
-  //       if (!element) continue
-
-  //       const rect = element.getBoundingClientRect()
-  //       if (rect.top <= 100 && rect.bottom >= 100) {
-  //         setActiveSection(section)
-  //         break
-  //       }
-  //     }
-  //   }
-
-  //   window.addEventListener("scroll", handleScroll)
-  //   return () => window.removeEventListener("scroll", handleScroll)
-  // }, [])
-
-  // const scrollToSection = (sectionId) => {
-  //   setIsMenuOpen(false)
-  //   const element = document.getElementById(sectionId)
-  //   console.log(element);
-
-  //   if (element) {
-  //     const offsetTop = element.offsetTop
-  //     window.scrollTo({
-  //       top: offsetTop - 80,
-  //       behavior: "smooth",
-  //     })
-  //   }
-  // }
-
   return (
     <div className="min-h-screen bg-white">
-      {/* Navbar */}
       <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
@@ -108,7 +73,6 @@ export default function Home() {
       <BenefitsSection />
       <TestimonialsSection />
       <ContactSection />
-      {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
