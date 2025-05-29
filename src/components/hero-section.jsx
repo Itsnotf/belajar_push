@@ -7,7 +7,7 @@ export default function HeroSection() {
             <div className='container mx-0 min-h-screen space-y-10 flex flex-col md:flex-row md:mx-10  w-full'>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-start mt-10 gap-y-4'>
                     <h1 className='text-4xl font-mono font-bold'>Belajar React</h1>
-                    <p className='text-sm font-mono'>Belajar React Disintak Itu Seru banget!</p>
+                    <h1 className='text-sm font-mono'>Belajar React Disintak Itu Seru banget!</h1>
                     <div className='flex flex-row gap-5'>
                         <button className='border px-6 rounded-md'>Contact</button>
                         <button className='border px-6 w-fit rounded-md'>Belajar Sekarang!</button>
